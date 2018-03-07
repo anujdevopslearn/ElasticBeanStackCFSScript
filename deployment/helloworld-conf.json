@@ -1,0 +1,86 @@
+[
+  {
+    "ParameterKey": "ApplicationName",
+    "ParameterValue": "HelloWorld"
+  },
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "production"
+  },
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "dev_podcast"
+  },
+  {
+    "ParameterKey": "SSHLocation",
+    "ParameterValue": "0.0.0.0/0"
+  },
+  {
+    "ParameterKey": "AutoScalingGroupMinSize",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "AutoScalingGroupMaxSize",
+    "ParameterValue": "9"
+  },
+  {
+    "ParameterKey": "RollingUpdateEnabled",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "RollingUpdateType",
+    "ParameterValue": "Immutable"
+  },
+  {
+    "ParameterKey": "StreamLogs",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "StreamLogsDeleteOnTerminate",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "StreamLogsRetentionInDays",
+    "ParameterValue": "7"
+  },
+  {
+    "ParameterKey": "DeploymentPolicy",
+    "ParameterValue": "Immutable"
+  },
+  {
+    "ParameterKey": "LogPublicationControl",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "ELBCrossZone",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "HealtReportingType",
+    "ParameterValue": "enhanced"
+  },
+  {
+    "ParameterKey": "EnvironmentType",
+    "ParameterValue": "LoadBalanced"
+  },
+  {
+    "ParameterKey": "OperatorEmail",
+    "ParameterValue": "youremail@gmail.com"
+  },
+  {
+    "ParameterKey": "RootDomainName",
+    "ParameterValue": "mydomain.com"
+  },
+  {
+    "ParameterKey": "ApplicationS3Bucket",
+    "ParameterValue": "podcast-app-beanstalk"
+  },
+  {
+    "ParameterKey": "ApplicationS3Artifact",
+    "ParameterValue": "helloworld.zip"
+  },
+  {
+    "ParameterKey": "AWSRegion",
+    "ParameterValue": "us-west-2"
+  }
+]
