@@ -1,4 +1,4 @@
-# aws-eb-helloworld-nodejs
+# aws-eb-Podcast-nodejs
 
 This is a project to show you how to Deploy a Node.js Application like [this](https://github.com/GoogleCloudPlatform/nodejs-getting-started.git) over [AWS Beanstalk](https://aws.amazon.com/elasticbeanstalk/) using [AWS Cloud Formation](https://aws.amazon.com/cloudformation).
 
