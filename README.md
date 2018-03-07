@@ -52,7 +52,7 @@ This project provide a [deploy.sh](deploy.sh) script to help us deploy our proje
 ```
 
 It use AWS CloudFormation template locate in [deployment/cf-beanstalk.json](deployment/cf-beanstalk.json)
-and a config file [deployment/helloworld-conf.json](deployment/helloworld-conf.json) where you can put your own config Parameters
+and a config file [deployment/application-conf.json](deployment/helloworld-conf.json) where you can put your own config Parameters
 
 ## Destroy stack
 
@@ -86,10 +86,3 @@ eb open
 
 if you want to knoe more about [eb cli, click here](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-cmd-commands.html)
 
-## References
-
-* [Passing Parameters to CloudFormation Stacks with the AWS CLI and Powershell](https://aws.amazon.com/es/blogs/devops/passing-parameters-to-cloudformation-stacks-with-the-aws-cli-and-powershell/)
-* [AWS Elastic Beanstalk --> Supported Platforms](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.nodejs)
-* [AWS Elastic Beanstalk --> General Options for All Environments](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html#command-options-general-elasticbeanstalkhealthreporting)
-* [AWS CloudFormation --> Sample Templates](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html#w2ab2c21c48c13c29)
-* [Develop, Deploy, and Manage for Scale with Elastic Beanstalk and CloudFormation Series](https://aws.amazon.com/es/blogs/devops/part-1-develop-deploy-and-manage-for-scale-with-elastic-beanstalk-and-cloudformation-series/)
