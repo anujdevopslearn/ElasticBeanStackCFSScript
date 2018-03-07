@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "ApplicationName",
-    "ParameterValue": "HelloWorld"
+    "ParameterValue": "PodCastNodeJS"
   },
   {
     "ParameterKey": "EnvironmentName",
@@ -21,7 +21,7 @@
   },
   {
     "ParameterKey": "AutoScalingGroupMaxSize",
-    "ParameterValue": "9"
+    "ParameterValue": "3"
   },
   {
     "ParameterKey": "RollingUpdateEnabled",
@@ -65,11 +65,11 @@
   },
   {
     "ParameterKey": "OperatorEmail",
-    "ParameterValue": "youremail@gmail.com"
+    "ParameterValue": "admin@podcast.com"
   },
   {
     "ParameterKey": "RootDomainName",
-    "ParameterValue": "mydomain.com"
+    "ParameterValue": "podcast.com"
   },
   {
     "ParameterKey": "ApplicationS3Bucket",
@@ -77,7 +77,7 @@
   },
   {
     "ParameterKey": "ApplicationS3Artifact",
-    "ParameterValue": "helloworld.zip"
+    "ParameterValue": "nodejsapp.zip"
   },
   {
     "ParameterKey": "AWSRegion",
