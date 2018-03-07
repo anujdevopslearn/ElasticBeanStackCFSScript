@@ -10,7 +10,7 @@
       "Type" : "String",
       "MinLength": "4",
       "MaxLength": "100",
-      "Default" : "HelloWorld",
+      "Default" : "PodCastApplication",
       "AllowedPattern" : "^[\\w-]*$",
       "ConstraintDescription" : "must be a valid string Alphanumeric + _ and -"
     },
@@ -28,7 +28,7 @@
     "KeyName": {
       "Description" : "Name of an existing EC2 KeyPair to enable SSH access to the Elastic Beanstalk hosts",
       "Type": "AWS::EC2::KeyPair::KeyName",
-      "Default" : "hello-world-app-ec2-key-pair",
+      "Default" : "podcast",
       "ConstraintDescription" : "must be the name of an existing EC2 KeyPair."
     },
 
@@ -52,7 +52,7 @@
     "AutoScalingGroupMaxSize" : {
       "Description" : "Maximum number of instances you want in your Auto Scaling group.",
       "Type" : "Number",
-      "Default" : "6",
+      "Default" : "3",
       "ConstraintDescription" : "must be a valid integer value."
     },
 
@@ -161,7 +161,7 @@
     "OperatorEmail": {
       "Description": "Email address to notify if there are any operational issues",
       "Type": "String",
-      "Default": "youremail@gmail.com",
+      "Default": "admin@podcast.com",
       "AllowedPattern": "([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)",
       "ConstraintDescription": "must be a valid email address."
     },
@@ -169,7 +169,7 @@
     "RootDomainName": {
       "Description": "Domain name for your website (example.com)",
       "Type": "String",
-      "Default": "mydomain.com",
+      "Default": "podcast.com",
       "AllowedPattern": "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]",
       "ConstraintDescription": "must be a valid domain name."
     },
@@ -177,19 +177,19 @@
     "ApplicationS3Bucket": {
       "Description": "Application path in s3",
       "Type": "String",
-      "Default": "https://s3-eu-west-1.amazonaws.com/hello-world-app-beanstalk"
+      "Default": "https://s3-us-west-2.amazonaws.com/podcast-app-beanstalk"
     },
 
     "ApplicationS3Artifact": {
       "Description": "Application artifact file",
       "Type": "String",
-      "Default": "helloworld.zip"
+      "Default": "nodejsapp.zip"
     },
 
     "AWSRegion": {
       "Description": "AWS Region name",
       "Type": "String",
-      "Default": "eu-west-1"
+      "Default": "us-west-2"
     }
   },
 
@@ -476,7 +476,7 @@
       "Type" : "AWS::ElasticBeanstalk::Application",
       "Properties" : {
         "ApplicationName" : { "Ref" : "ApplicationName" },
-        "Description" : "AWS Elastic Beanstalk Node.js Hello World Application"
+        "Description" : "AWS Elastic Beanstalk Node.js PodCast Application"
       }
     },
 
@@ -496,7 +496,7 @@
       "Type" : "AWS::ElasticBeanstalk::ConfigurationTemplate",
       "Properties" : {
         "ApplicationName" : { "Ref" : "SampleApplication" },
-        "Description" :  "AWS Elastic Beanstalk Environment running Node.js Hello World Application",
+        "Description" :  "AWS Elastic Beanstalk Environment running Node.js PodCast Application",
         "EnvironmentId" : "",
         "SolutionStackName" : "64bit Amazon Linux 2017.09 v4.4.5 running Node.js",
         "OptionSettings" : [
@@ -544,7 +544,7 @@
          "ApplicationName" : { "Ref" : "SampleApplication" },
          "CNAMEPrefix" : { "Fn::Join" : ["-", [{ "Ref" : "ApplicationName" }, { "Ref" : "EnvironmentName" }, { "Ref" : "HostedZone"} ]]},
          "EnvironmentName" : { "Ref" : "EnvironmentName" },
-         "Description" :  "AWS Elastic Beanstalk Environment running Node.js Hello World Application",
+         "Description" :  "AWS Elastic Beanstalk Environment running Node.js PodCast Application",
          "TemplateName": { "Ref": "SampleConfigTemplate" },
          "VersionLabel" : { "Ref" : "SampleApplicationVersion" }
       }
