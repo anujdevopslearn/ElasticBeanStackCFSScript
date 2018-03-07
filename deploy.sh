@@ -11,7 +11,7 @@ set -e
 ################################################################################
 # Parameters
 CF_TEMPLATE_FILE="./deployment/cf-beanstalk.json"
-CF_CONFIG_FILE="./deployment/helloworld-conf.json"
+CF_CONFIG_FILE="./deployment/application-config.json"
 REPO_NAME=`basename $(git remote show -n origin | grep Push | cut -d: -f2- | cut -d\. -f2)`
 PROGNAME=$(basename $0)
 
