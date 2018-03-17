@@ -161,8 +161,8 @@ if [[ "${ARG}" == "init" ]]; then
   if [[ "${CF_STACK_EXIST}" == false ]]; then
     cf_create_stack $CF_STACK_NAME $CF_TEMPLATE_FILE $CF_CONFIG_FILE $REGION
     wait_until_cf_stack_creation $CF_STACK_NAME $REGION
-    eb_init $REGION
-    eb_use $STACK_ENVIRONMENT
+    #eb_init $REGION
+    #eb_use $STACK_ENVIRONMENT
     cp deployment/cloudwatch.config .ebextensions/
     #eb deploy
   fi
